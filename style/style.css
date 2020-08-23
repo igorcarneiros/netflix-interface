@@ -1,0 +1,112 @@
+:root {
+    --red: #E50914;
+    --black:#141414;
+}
+
+body {
+    background: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+* { /* reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* garante que nada vai ultrapassar a borda da caixa */
+}
+
+header .container {
+    display: flex; /* icones um do lado do outro */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* joga um pra cada lado */
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* BASIC ELEMENTS MOVIE/SERIES */
+.main-movie {
+    font-size: 16px;
+    background-image: linear-gradient(#00000050, #00000050 100%), url(/images/series-mrrobot-open.jpg);
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /* um embaixo do outro */
+    justify-content: center;
+    align-items: flex-start; /* alinha os elementos para a esquerda de acordo com o flex direction */
+}
+
+.main-movie .plot {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.main-movie .title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button {
+    background-color: #00000050;
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /* cima/baixo, esquerda/direita */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.carousel-movies {
+    margin-top: 5px;
+}
